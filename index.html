@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishna Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/633013970b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+      <nav>
+        <img src="images/logo.png" class="logo">
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Full-Stack Developer</p>
+        <h1>Hi, I'm <span>Krishna Dighe</span><br> from India</h1>
+      </div>
+    </div>
+</div>
+<!-- About -->
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="about-col-1">
+        <img src="images/user.png">
+      </div>
+      <div class="about-col-2">
+        <h1 class="sub-title">About Me</h1>
+        <p>I’m a passionate Full-Stack Web Developer who loves turning ideas into clean, functional, and user-friendly digital experiences.
+           I enjoy building modern websites and applications using HTML, CSS, JavaScript, and backend technologies.
+           I focus on writing clean code, creating responsive layouts, and delivering smooth user experiences.
+           Constantly learning, improving, 
+           and pushing my creativity to build meaningful projects that make an impact.</p>
+
+           <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+           </div>
+           <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>UI/UX Design</span><br>Creating clean and user-friendly interfaces</li>
+              <li><span>Frontend Development</span><br>HTML, CSS, JavaScript</li>
+              <li><span>Database Management</span><br>MongoDB & MySQL & API's</li>
+            </ul>
+           </div>
+            <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>Web Development Experience</span><br>Built multiple responsive and modern websites using HTML, CSS & JavaScript</li>
+              <li><span>UI/UX Implementation</span><br>Designed and improved user interfaces for better usability and clean layouts</li>
+              <li><span>API Integration</span><br>Worked with REST APIs for dynamic content and backend communication</li>
+            </ul>
+           </div>
+           <div class="tab-contents" id="education">
+            <ul>
+              <li><span>Diploma-IT</span><br>Learning core programming, web development, and software fundamentals</li>
+              <li><span>Continuous Learning</span><br>Practicing real-world projects to improve development skills daily</li>
+              <li><span>Full-Stack Web Development</span><br>Hands-on experience with frontend, backend, databases, and APIs</li>
+            </ul>
+           </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- services -->
+ <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-web-awesome"></i>
+          <h2>Web Design</h2>
+          <p>I craft beautiful digital experiences — from clean and intuitive interfaces to robust full-stack web applications.
+             I bring ideas to life through responsive designs, smooth interactions, and well-structured code. 
+             Whether it’s a modern website, a custom web app, or a complete front-to-back solution, 
+             I transform concepts into polished and engaging digital products.</p>
+             <a href="#">Learn more</a>
+        </div>
+       <div>
+        <i class="fa-solid fa-code"></i>
+          <h2>Full-Stack Dev.</h2>
+          <p>I build complete web solutions — from the frontend visuals to backend logic and database systems.  
+            With strong command over MongoDB, and APIs, I create secure, scalable, and 
+            high-performance applications. Whether it’s a custom feature, automation, or a full product,  
+            I turn complex requirements into smooth, functional, and polished systems.</p>
+            <a href="#">Learn more</a>
+        </div>
+
+
+        <div>
+          <i class="fa-solid fa-wand-magic-sparkles"></i>
+          <h2>UI/UX Design</h2>
+          <p>I design clean, modern, and intuitive user experiences that feel effortless and engaging.  
+            From wireframes to polished interfaces, every detail is crafted with clarity, balance,  
+            and user psychology in mind. I blend creativity with usability to create digital products  
+            that not only look stunning but also guide users smoothly and meaningfully.</p>
+            <a href="#">Learn more</a>
+        </div>
+
+      </div>
+    </div>
+ </div>
+
+ <!-- portfolio -->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <p class="work-hint">💡 Tap the project cards to open the live demo</p>
+
+      <div class="work-list">
+        <div class="work">
+          <img src="images/h1.jpg" alt="">
+          <div class="layer">
+            <h3>GlowAI</h3>
+            <p>GlowAI helps you discover the perfect skincare products tailored just for you.
+              Try it now and glow with confidence.</p>
+              <a href="javascript:void(0)" onclick="window.open('https://glowai-skincare.netlify.app','_blank')">
+  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+</a>
+
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/h2.jpg" alt="">
+          <div class="layer">
+            <h3>InterviewPrep AI</h3>
+            <p>InterviewPrep AI helps you practice smarter and gain confidence for every interview.
+              Get ready to crack your next opportunity.</p>
+              <a href="javascript:void(0)" onclick="window.open('https://statuesque-rugelach-b58c79.netlify.app','_blank')">
+  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+</a>
+
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/h3.jpg" alt="">
+          <div class="layer">
+            <h3>QuoteVerse</h3>
+            <p>QuoteVerse brings you daily inspiration to uplift your mind and fuel your day.
+              Discover words that truly resonate.</p>
+              <a href="javascript:void(0)" onclick="window.open('https://quote-verse-bykrishna.netlify.app','_blank')">
+  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+</a>
+
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See more</a>
+    </div>
+  </div>
+
+<!-- contact-->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa-solid fa-paper-plane"></i>krishnadighe133@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i>+91 9428507985</p>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/krishna-dighe410/"><i class="fa-brands fa-square-linkedin"></i></a>
+          <a href="https://github.com/krishna-d-codes"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.instagram.com/krxshnx_.410/"><i class="fa-brands fa-square-instagram"></i></a>
+        </div>
+        <a href="images/CV_2024083018575860.pdf" download class="btn btn2">Download CV</a>
+      </div>
+      <div class="contact-right">
+        <!-- Contact form (replace existing form in contact-right) -->
+<form id="contactForm" autocomplete="off">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+  <button type="submit" class="btn btn2">Submit</button>
+</form>
+
+<!-- Success message overlay (keeps in HTML for JS to toggle) -->
+<div id="formSuccess" class="form-success" aria-hidden="true">
+  <div class="form-success-box">
+    <h3>Thanks — message sent!</h3>
+    <p>I’ll get back to you shortly.</p>
+    <small>Redirecting to home…</small>
+  </div>
+</div>
+
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>Copyright © Krishna. Made by Krishna Dighe</p>
+  </div>
+</div>
+
+
+
+<script>
+
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname){
+  for(tablink of tablinks){
+    tablink.classList.remove("active-link");
+  }
+  for(tabcontent of tabcontents){
+    tabcontent.classList.remove("active-tab");
+  }
+  event.currentTarget.classList.add("active-link");
+  document.getElementById(tabname).classList.add("active-tab");
+}
+
+</script>
+
+<script>
+  var sidemenu = document.getElementById("sidemenu");
+
+function openmenu(){
+  sidemenu.style.right = "0";
+}
+function closemenu(){
+  sidemenu.style.right = "-200px";
+}
+
+// Close when clicking any menu item
+document.querySelectorAll("#sidemenu li a").forEach(link => {
+  link.addEventListener("click", () => {
+    closemenu();
+  });
+});
+
+// Close when clicking outside the menu (only on phone view)
+document.addEventListener("click", function (e) {
+  const sidemenu = document.getElementById("sidemenu");
+  const menuBtn = document.querySelector("nav .fa-bars");
+
+  // if menu is open
+  const menuOpen = sidemenu.style.right === "0px";
+
+  if (menuOpen) {
+    // if click is OUTSIDE the sidemenu and OUTSIDE the menu button
+    if (!sidemenu.contains(e.target) && e.target !== menuBtn) {
+      closemenu();
+    }
+  }
+});
+</script>
+
+<script>
+/* ---------- Formspree AJAX submit + success message + redirect ---------- */
+
+(function(){
+  const FORMSPREE_ENDPOINT = "https://formspree.io/f/manrjqdl"; // <<--- REPLACE this
+
+  const form = document.getElementById("contactForm");
+  const successEl = document.getElementById("formSuccess");
+
+  if (!form) return;
+
+  form.addEventListener("submit", function(e){
+    e.preventDefault();
+
+    // collect form data
+    const formData = new FormData(form);
+
+    // Optional: disable submit button
+    const submitBtn = form.querySelector('button[type="submit"]');
+    if (submitBtn) {
+      submitBtn.disabled = true;
+      submitBtn.textContent = "Sending...";
+    }
+
+    // send to formspree
+    fetch(FORMSPREE_ENDPOINT, {
+      method: "POST",
+      headers: {
+        'Accept': 'application/json'
+      },
+      body: formData
+    })
+    .then(function(response){
+      if (response.ok) {
+        // success UI
+        showSuccessAndRedirect();
+        // optionally clear the form
+        form.reset();
+      } else {
+        return response.json().then(function(data){
+          // Formspree returns errors in JSON sometimes
+          throw new Error((data && data.error) ? data.error : "Failed to send");
+        });
+      }
+    })
+    .catch(function(err){
+      console.error("Form submission error:", err);
+      alert("Sorry — something went wrong. Please try again later.");
+    })
+    .finally(function(){
+      if (submitBtn) {
+        submitBtn.disabled = false;
+        submitBtn.textContent = "Submit";
+      }
+    });
+  });
+
+  function showSuccessAndRedirect(){
+    // show overlay
+    successEl.classList.add("show");
+    successEl.setAttribute("aria-hidden", "false");
+
+    // After a short delay, redirect to top / home
+    setTimeout(function(){
+      // Option A (scroll to header, no reload):
+      window.location.hash = "#header";
+      // Option B (reload index.html instead of just scrolling) — uncomment to use:
+      // window.location.href = window.location.pathname;
+
+      // hide the overlay after redirect (or remove if reloading)
+      successEl.classList.remove("show");
+      successEl.setAttribute("aria-hidden", "true");
+    }, 3000); // 3000 ms = 3 seconds
+  }
+
+})();
+</script>
+
+
+
+
+</body>
+</html>
